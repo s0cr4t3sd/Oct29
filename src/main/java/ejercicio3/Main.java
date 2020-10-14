@@ -24,7 +24,7 @@ public class Main {
             String letra;
 
             for(int i = 0; i < 50; i++){               
-                flujo.write(("Linea "+(i+1)+" :"));
+                //flujo.write(("Linea "+(i+1)+" :"));
                 do{
                    int aleatorio = rdn.nextInt(26)+65;
                    char caracter = ((char) aleatorio);
@@ -43,7 +43,7 @@ public class Main {
                     if(letra.equalsIgnoreCase("x")){
                         flujo.write(letra);
                     }else{                           
-                        flujo.write(letra+", ");
+                        flujo.write(letra+",");
                     }
                    
                 }while(!letra.equalsIgnoreCase("x"));
